@@ -1,4 +1,4 @@
-const operators = { SUM: 1, SUB: 2, DIV: 3, MULT: 4 };
+const operators = { SUM: 1, SUB: 2, DIV: 3, MULT: 4, POW: 5 };
 let mostBeClean = false;
 let operator;
 let result;
@@ -37,6 +37,17 @@ function operate(operation) {
   mostBeClean = true;
 }
 
+function square_root() {
+  let element = document.getElementById("tfNumber");
+
+  if (element.value.trim().length == 0 || element.value.trim() == ".") {
+    return;
+  }
+
+  result = Math.sqrt(Number(element.value));
+  element.value = result;
+}
+
 function calculate() {
   if (!operator || !result) return;
 
@@ -71,6 +82,13 @@ function calculate() {
 
   if (operator == operators.DIV) {
     result /= secondValue;
+    element.value = result;
+    operator = undefined;
+    return;
+  }
+
+  if (operator == operators.POW) {
+    result = Math.pow(result, secondValue);
     element.value = result;
     operator = undefined;
     return;
