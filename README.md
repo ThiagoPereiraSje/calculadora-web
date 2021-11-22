@@ -1,3 +1,3 @@
-# exercises
+# Calculadora Web
 
-Nesse repositório serão armazenados os exercícios da Mentoria Trilha.
+Nesse repositório será armazenado o exercício da "Calculadora Web".
