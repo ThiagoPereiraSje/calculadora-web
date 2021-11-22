@@ -1,0 +1,44 @@
+div#interface {
+  background-color: #444;
+  width: 180px;
+}
+
+header#display {
+  padding: 4px;
+}
+
+header#display input {
+  width: 96%;
+  height: 40px;
+  border: 1px solid #222;
+  outline: none;
+  background-color: white;
+  text-align: right;
+}
+
+section#controls {
+  padding: 4px;
+}
+
+section#controls button {
+  width: 35px;
+  height: 35px;
+  border: 1px solid #222;
+  border-radius: 50%;
+  margin: 2px;
+}
+
+.operator {
+  background-color: gray;
+  color: white;
+}
+
+.equal {
+  background-color: orangered;
+  color: white;
+}
+
+.clean {
+  background-color: #4169e1;
+  color: white;
+}
